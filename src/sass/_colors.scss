@@ -1,0 +1,8 @@
+$white: #FFFFFF;
+$black: #3E3D42;
+$grey: #f9f9fb;
+
+$primary: #43D3BA;
+$primary-light: #D0EBED; 
+//$background-gradient: linear-gradient(160deg, $grey 0%, $primary 100%);
+$background-gradient: radial-gradient( circle farthest-corner at 10% 20%, adjust-hue($primary, 10deg) 0%,$primary 90%);
