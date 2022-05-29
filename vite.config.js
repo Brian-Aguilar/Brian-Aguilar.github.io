@@ -6,7 +6,7 @@ import pugPlugin from "vite-plugin-pug"
 export default defineConfig({
     plugins: [pugPlugin({localImports: true, pretty: true})],
     build: {
-        outDir: 'doc/',
+        outDir: 'docs/',
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
