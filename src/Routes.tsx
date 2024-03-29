@@ -4,6 +4,7 @@ import Profile from "./components/Profile"
 import MenuBar from "./components/MenuBar"
 import Card from "./components/Card"
 import ErrorPage from "./pages/ErrorPage"
+import Breadcrumb from "./components/Breadcrumb"
 
 const RoutesApp = () => {
     return (
@@ -11,6 +12,7 @@ const RoutesApp = () => {
             <Profile />
             <div className="PrincipalPage">
                 <Card>
+                    <Breadcrumb />
                     <Routes>
                         <Route index Component={HomePage} />
                         <Route path="*" Component={ErrorPage} />

@@ -1,0 +1,10 @@
+@import "../utils";
+
+.breadcrumb {
+    display: flex;
+    flex-direction: row;
+    color: $grey;
+    margin-bottom: 1em;
+    gap: 0.5em;
+    align-items: center;
+}

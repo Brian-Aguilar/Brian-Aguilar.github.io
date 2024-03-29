@@ -5,6 +5,7 @@
 @import "components/Profile.scss";
 @import "components/MenuBar.scss";
 @import "components/Home.scss";
+@import "components/Breadcrumb.scss";
 
 :root {
     line-height: 1.5;
@@ -19,6 +20,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+    overflow-y: scroll;
+}
+
 @media (prefers-color-scheme: light) {
     :root {
         color: $black;
@@ -29,7 +34,6 @@
 #root {
     width: 100vw;
     height: 100vh;
-    overflow-y: scroll;
     max-width: 1280px;
     font-size: $font-size;
     display: flex;
@@ -42,5 +46,6 @@
 
     .PrincipalPage {
         flex: 1 1 auto;
+        max-width: 800px;
     }
 }
