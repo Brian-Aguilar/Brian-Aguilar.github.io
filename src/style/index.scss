@@ -1,12 +1,12 @@
 @import "reset";
 @import "utils";
+@import "fonts";
 @import "components/Card.scss";
 @import "components/Profile.scss";
 @import "components/MenuBar.scss";
 @import "components/Home.scss";
 
 :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
     color-scheme: light dark;
