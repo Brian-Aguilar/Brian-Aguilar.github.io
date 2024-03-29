@@ -1,4 +1,40 @@
+@import "../utils";
 
 .Profile {
-    flex: 2 1 auto;
+    flex: 0 1 auto;
+    position: relative;
+
+    .Card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 300px;
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            clip-path: circle(36.4% at 42% 40%);
+            overflow: hidden;
+            display: block;
+            margin-top: 2em;
+        }
+
+    }
+
+    ul {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1.5em;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        user-select: none;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }

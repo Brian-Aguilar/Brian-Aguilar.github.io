@@ -1,19 +1,24 @@
 import { HashRouter, Route, Routes } from "react-router-dom"
-import HomePage from "./pages/Home"
+import HomePage from "./pages/HomePage"
 import Profile from "./components/Profile"
 import MenuBar from "./components/MenuBar"
+import Card from "./components/Card"
+import ErrorPage from "./pages/ErrorPage"
 
 const RoutesApp = () => {
     return (
-        <>
+        <HashRouter>
             <Profile />
-            <HashRouter>
-                <Routes>
-                    <Route index Component={HomePage} />
-                </Routes>
-            </HashRouter>
+            <div className="PrincipalPage">
+                <Card>
+                    <Routes>
+                        <Route index Component={HomePage} />
+                        <Route path="*" Component={ErrorPage} />
+                    </Routes>
+                </Card>
+            </div>
             <MenuBar />
-        </>
+        </HashRouter>
     )
 }
 

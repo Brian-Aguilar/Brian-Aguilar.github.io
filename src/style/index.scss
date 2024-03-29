@@ -36,5 +36,11 @@
     align-items: flex-start;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 0 1.5em;
+    padding-top: 2em;
     gap: 1rem;
+
+    .PrincipalPage {
+        flex: 1 1 auto;
+    }
 }

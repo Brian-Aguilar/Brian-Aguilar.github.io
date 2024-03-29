@@ -1,3 +1,24 @@
+@import "../utils";
+
 .MenuBar {
-    flex: 1 1 auto;
+    flex: 0 1 auto;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem 0;
+
+        li {
+            cursor: pointer;
+            color: $grey;
+            &.actived {
+                color: $black;
+            }
+
+            a {
+                color: inherit;
+            }
+        }
+    }
 }
