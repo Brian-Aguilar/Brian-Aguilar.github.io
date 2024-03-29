@@ -1,0 +1,9 @@
+@import "../utils";
+
+.Card {
+    background: $white;
+    padding: 1rem;
+    border-radius: $font-size;
+    @include custom-boxshadown;
+    margin: 0 1em;
+}
