@@ -242,6 +242,7 @@ main {
         h2 {
             border-bottom: 1px solid var(--black);
             margin-bottom: 1em;
+            line-height: 1.8;
         }
 
         .content {
@@ -293,7 +294,7 @@ main {
 
             .projects-content {
                 display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
                 gap: 1.25em;
                 grid-auto-flow: dense;
             }
