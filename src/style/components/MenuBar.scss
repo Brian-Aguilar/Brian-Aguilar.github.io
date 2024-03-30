@@ -2,7 +2,10 @@
 
 .MenuBar {
     flex: 0 1 auto;
-    width: 60px;;
+    min-width: 60px;
+    position: sticky;
+    z-index: 2;
+    top: 0;
 
     ul {
         display: flex;
@@ -13,13 +16,34 @@
         li {
             cursor: pointer;
             color: $grey;
-            &.actived {
+            transition: color 2s cubic-bezier(0.075, 0.82, 0.165, 1),
+                transform .3s ease-out;
+
+            &.actived,
+            &:hover {
                 color: $black;
+                transform: scale(1.2);
             }
 
             a {
                 color: inherit;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: $viewport-mobile) {
+    .MenuBar {
+        width: auto;
+        padding: 0;
+        position: fixed;
+        top: inherit;
+        bottom: 0;
+
+        ul {
+            flex-direction: row;
+            padding: 0;
+            gap: 2rem;
         }
     }
 }

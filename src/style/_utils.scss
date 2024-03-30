@@ -6,6 +6,8 @@ $primary: #43D3BA;
 $primary-light: #D0EBED;
 
 $font-size: 16px;
+$viewport-desktop: 1366px;
+$viewport-mobile: 768px;
 
 @mixin custom-boxshadown() {
     // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
