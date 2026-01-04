@@ -1,11 +1,11 @@
-@import "reset";
-@import "utils";
-@import "fonts";
-@import "components/Card.scss";
-@import "components/Profile.scss";
-@import "components/MenuBar.scss";
-@import "components/Home.scss";
-@import "components/Breadcrumb.scss";
+@use "reset" as *;
+@use "fonts" as *;
+@use "utils" as *;
+@use "components/Card.scss" as *;
+@use "components/Profile.scss" as *;
+@use "components/MenuBar.scss" as *;
+@use "components/Home.scss" as *;
+@use "components/Breadcrumb.scss" as *;
 
 :root {
     line-height: 1.5;
@@ -13,12 +13,13 @@
     color-scheme: light dark;
     color: $white;
     background-color: $black;
-
+    
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 
 body {
     overflow-y: scroll;
