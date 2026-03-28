@@ -34,11 +34,10 @@
 
 @media only screen and (max-width: $viewport-mobile) {
     .MenuBar {
-        width: auto;
+        width: 88vw;
         padding: 0;
         position: fixed;
-        top: inherit;
-        bottom: 0;
+        top: 1em;
 
         ul {
             flex-direction: row;

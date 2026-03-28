@@ -1,6 +1,7 @@
-import Card from "./Card"
-import ProfileImg from "../assets/profile.jpg"
-import { RiArchiveFill, RiBriefcaseFill, RiGithubFill, RiLinkedinFill, RiOpenArmFill } from "@remixicon/react"
+import Card from "./Card";
+import ProfileImg from "../assets/profile.jpg";
+
+import { FaLinkedin, FaGithub, FaUserTie, FaUserNinja, FaDatabase } from "react-icons/fa";
 
 const Profile = () => {
     return (
@@ -9,30 +10,30 @@ const Profile = () => {
                 <div className="profile-img">
                     <img src={ProfileImg} alt="Foto Brian Aguilar" />
                 </div>
-                <p>Hi!, I'm <b>Brian</b>.<br />I'm <b>Backend</b> developer and <b>Fronted</b> developer.</p>
+                <p>Hola, Soy <b>Brian</b>.<br />Soy desarrollador Full Stack, ya que tengo conocimientos solidos en lo que es Fronted y Backend.</p>
 
                 <ul>
                     <li>
-                        <RiBriefcaseFill />
-                        <span>Experience</span>
+                        <FaUserTie />
+                        <span>Experiencia</span>
                         <span>1+</span>
                     </li>
                     <li>
-                        <RiArchiveFill />
-                        <span>Projects</span>
+                        <FaDatabase />
+                        <span>Proyectos</span>
                         <span>20</span>
                     </li>
                     <li>
-                        <RiOpenArmFill />
-                        <span>Skills</span>
+                        <FaUserNinja />
+                        <span>Habilidades</span>
                         <span>20</span>
                     </li>
                     <li>
-                        <RiGithubFill />
+                        <FaGithub />
                         <span>Github</span>
                     </li>
                     <li>
-                        <RiLinkedinFill />
+                        <FaLinkedin />
                         <span>LinkedIn</span>
                     </li>
                 </ul>

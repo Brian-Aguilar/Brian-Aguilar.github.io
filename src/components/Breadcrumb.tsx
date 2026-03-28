@@ -1,6 +1,7 @@
-import { RiHomeFill } from "@remixicon/react"
-import { useEffect, useState } from "react"
-import { useLocation } from "react-router-dom"
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+
+import { RiHome6Line } from "react-icons/ri";
 
 const breadcrumbFormat = (path: string) => {
     let listPath = path.split("/")
@@ -21,7 +22,7 @@ const Breadcrumb = () => {
     }, [location])
     return (
         <ul className="breadcrumb">
-            <ol><RiHomeFill size={20} /></ol>
+            <ol><RiHome6Line size={20} /></ol>
             <ol>/</ol>
             {breadcrumString.map((item) => (<ol key={`b${item}`}>{item}</ol>))}
         </ul>

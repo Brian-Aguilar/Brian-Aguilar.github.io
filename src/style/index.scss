@@ -60,6 +60,13 @@ body {
     text-transform: uppercase;
 }
 
+.d-flex {
+    display: flex;
+}
+.justify-between {
+    justify-content: space-between;
+}
+
 @media only screen and (max-width: $viewport-mobile) {
     #root {
         flex-direction: column;
